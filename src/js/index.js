@@ -1,25 +1,25 @@
 import "../style/index.scss";
 
-/**
- *  EDIT ONLY INSIDE THIS RENDER FUNCTION
- *  This function is called every time the user changes types or changes any input
- * 
+
+ //EDIT ONLY INSIDE THIS RENDER FUNCTION
+ //This function is called every time the user changes types or changes any input
+ 
     {
         includeCover: true, // if includeCover is true the algorithm should
         background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da", // this is the url of the image that will used as background for the profile cover
         avatarURL: "https://randomuser.me/api/portraits/women/42.jpg", // this is the url for the profile avatar
         socialMediaPosition: "left", // social media bar position (left or right)
         
-        twitter: null, // social media usernames
-        github: "alesanchezr",
-        linkedin: null,
-        instagram: null,
+        twitter: N/A // social media usernames
+        github: "Joshfishman97",
+        linkedin: https://www.linkedin.com/in/josh-fishman-972054214/ ,
+        instagram: N/A,
 
-        name: null,
-        lastname: null,
-        role: null,
-        country: null,
-        city: null
+        name: Josh,
+        lastname: Fishman,
+        role: Coding Student,
+        country: United States,
+        city: Miami
     }
  */
 function render(variables = {}) {
