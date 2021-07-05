@@ -10,9 +10,9 @@ import "../style/index.scss";
         avatarURL: "https://randomuser.me/api/portraits/women/42.jpg", // this is the url for the profile avatar
         socialMediaPosition: "left", // social media bar position (left or right)
         
-        twitter: N/A // social media usernames
+        twitter: N/A,
         github: "Joshfishman97",
-        linkedin: https://www.linkedin.com/in/josh-fishman-972054214/ ,
+        linkedin: "https://www.linkedin.com/in/josh-fishman-972054214/" ,
         instagram: N/A,
 
         name: Josh,
