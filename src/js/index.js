@@ -34,24 +34,34 @@ function render(variables = {}) {
     variables.twitter !== null
       ? `<li><a href="https://twitter.com/${variables.twitter}"><i class="fa fa-twitter"></i></a></li>`
       : "";
+  let githubLink =
+    variables.github !== null
+      ? `<li><a href="https://github.com/${variables.github}"><i class="fa fa-github"></i></a></li>`
+      : "";
+  let instagramLink =
+    variables.instagram !== null
+      ? ` <li><a href="https://instagram.com/${variables.instagram}"><i class="fa fa-instagram"></i></a></li>`
+      : "";
+  let linkedinLink =
+    variables.linkedin !== null
+      ? ` <li><a href="https://linkedin.com/${variables.linkedin}"><i class="fa fa-linkedin"></i></a></li>`
+      : "";
+
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
           <h1>${variables.name || "Name"} ${variables.lastname ||
     "Last Name"}</h1>
-          <h2>${variables.role}</h2>
-          <h3>${variables.city} ${variables.country}</h3>
+          <h2>${variables.role || "Role"}</h2>
+          <h3>${variables.city || "City"} ${variables.country || "Country"}</h3>
           <ul class="${variables.socialMediaPosition}">
             ${twitterLink}
-            <li><a href="https://github.com/${
-              variables.github
-            }"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/${
-              variables.linkedin
-            }"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/${
-              variables.instagram
-            }"><i class="fa fa-instagram"></i></a></li>
+            ${githubLink}
+            
+           ${linkedinLink}
+           
+            ${instagramLink}
+
           </ul>
         </div>
     `;
